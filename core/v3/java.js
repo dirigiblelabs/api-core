@@ -14,7 +14,7 @@ exports.call = function(className, methodName, params) {
 	var result = null;
 	if (engine === "rhino") {
 		result = org.eclipse.dirigible.api.v3.core.JavaFacade.call(className, methodName, params);
-	} ele if (engine === "nashorn") {
+	} else if (engine === "nashorn") {
 		result = Packages.org.eclipse.dirigible.api.v3.core.JavaFacade.call(className, methodName, params);
 	}
 	return result;
