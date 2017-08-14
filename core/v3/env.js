@@ -16,3 +16,8 @@ exports.get = function(name) {
 	var value = java.call('org.eclipse.dirigible.api.v3.core.EnvFacade', 'get', [name]);
 	return value;
 };
+
+exports.list = function() {
+	var value = java.call('org.eclipse.dirigible.api.v3.core.EnvFacade', 'list', []);
+	return value;
+};
