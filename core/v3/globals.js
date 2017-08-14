@@ -20,3 +20,8 @@ exports.get = function(name) {
 exports.set = function(name, value) {
 	java.call('org.eclipse.dirigible.api.v3.core.GlobalsFacade', 'set', [name, value]);
 };
+
+exports.list = function() {
+	var value = java.call('org.eclipse.dirigible.api.v3.core.GlobalsFacade', 'list', []);
+	return value;
+};
