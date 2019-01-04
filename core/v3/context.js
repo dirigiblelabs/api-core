@@ -30,5 +30,4 @@ exports.set = function(name, value) {
 	} else {
 		java.call('org.eclipse.dirigible.api.v3.core.ContextFacade', 'set', [name, value]);
 	}
-	
 };
