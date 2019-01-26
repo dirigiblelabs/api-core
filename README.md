@@ -17,7 +17,7 @@
   - provides a **Globals Object**, which is used to store and manage properties in the global store
 * [Java](http://www.dirigible.io/api/java.html) 
   - provides a **Java Object**, which is used for the interconnection between the Javascript engines and the underlying JVM
-* [Threads](http://www.dirigible.io/api/java.html) 
+* [Threads](http://www.dirigible.io/api/threads.html) 
   - provides **Threads** management functionality via the Mozilla Rhino engine to the underlying JVM
 
 ## License
