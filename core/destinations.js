@@ -9,6 +9,6 @@
  *   SAP - initial API and implementation
  */
 var destinations = require('core/v4/destinations');
-for(var propertyName in context) {
+for(var propertyName in destinations) {
 	exports[propertyName] = destinations[propertyName];
 }
