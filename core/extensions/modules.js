@@ -20,5 +20,5 @@ exports.getContent = function() {
 	}, {
 		name: "core/v4/template-engine",
 		description: "Template Engine API"
-	}]
-}
+	}];
+};
