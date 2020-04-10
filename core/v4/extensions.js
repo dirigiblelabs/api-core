@@ -17,10 +17,10 @@
 
 exports.getExtensions = function(extensionPoint) {
 	var extensions = org.eclipse.dirigible.api.v3.core.ExtensionsServiceFacade.getExtensions(extensionPoint);
-	return extensions;
+	return JSON.parse(JSON.stringify(extensions));
 };
 
 exports.getExtensionPoints = function() {
 	var extensionPoints = org.eclipse.dirigible.api.v3.core.ExtensionsServiceFacade.getExtensionPoints();
-	return extensionPoints;
+	return JSON.parse(JSON.stringify(extensionPoints));
 };
