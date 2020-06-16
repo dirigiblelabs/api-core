@@ -12,7 +12,7 @@
 /**
  * Get engine by type
  */
-exports.get = function(type) {
+exports.getEngine = function(type) {
 	return new Engine(type);
 }
 
@@ -45,7 +45,7 @@ function Engine(type) {
 	}
 }
 
-exports.types = function() {
+exports.getTypes = function() {
 	var json = org.eclipse.dirigible.engine.api.script.ScriptEngineExecutorsManager.getEngineTypesAsJson();
 	return JSON.parse(json);
 }
