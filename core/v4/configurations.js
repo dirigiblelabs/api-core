@@ -55,15 +55,15 @@ exports.isOSWindows = function() {
 	return org.eclipse.dirigible.commons.config.Configuration.isOSWindows();
 }
 
-exports.isOSMac() = function() {
+exports.isOSMac = function() {
 	return org.eclipse.dirigible.commons.config.Configuration.isOSMac();
 }
 
-exports.isOSUNIX() = function() {
+exports.isOSUNIX = function() {
 	return org.eclipse.dirigible.commons.config.Configuration.isOSUNIX();
 }
 
-exports.isOSSolaris() = function() {
+exports.isOSSolaris = function() {
 	return org.eclipse.dirigible.commons.config.Configuration.isOSSolaris();
 }
 
