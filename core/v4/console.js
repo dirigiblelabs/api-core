@@ -16,25 +16,32 @@
  */
 
 exports.log = function(message) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.log(message);
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.log(stringify(message));
 };
 
 exports.error = function(message, args) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.error(message, args);
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.error(stringify(message), args);
 };
 
 exports.info = function(message, args) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.info(message, args);
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.info(stringify(message), args);
 };
 
 exports.warn = function(message, args) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.warn(message, args);
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.warn(stringify(message), args);
 };
 
 exports.debug = function(message, args) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.debug(message, args);
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.debug(stringify(message), args);
 };
 
 exports.trace = function(message, args) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.trace(message, args);
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.trace(stringify(message), args);
 };
+
+function stringify(message) {
+	if (typeof message === 'object' && message !== null) {
+		return JSON.stringify(message);
+	}
+	return "" + message;
+}
