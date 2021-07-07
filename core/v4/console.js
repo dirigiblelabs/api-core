@@ -15,8 +15,8 @@
  * Note: This module is supported only with the Mozilla Rhino engine
  */
 
-exports.log = function(message) {
-	org.eclipse.dirigible.api.v3.core.ConsoleFacade.log(stringify(message));
+exports.log = function(message, args) {
+	org.eclipse.dirigible.api.v3.core.ConsoleFacade.log(stringify(message), args);
 };
 
 exports.error = function(message, args) {
