@@ -22,6 +22,9 @@ exports.getContent = function() {
 		name: "core/v4/env",
 		description: "Env API"
 	}, {
+		name: "core/v4/exec",
+		description: "Exec API"
+	}, {
 		name: "core/v4/extensions",
 		description: "Extensions API"
 	}, {
