@@ -1,11 +1,11 @@
 declare module "@dirigible/core" {
-    module configurations {
+    module configuration {
         /**
          * Returns the value for the specified key, or the default value
          * @param key
          * @param defaultValue
          */
-        function get(key, defaultValue?): string;
+        function get(key, defaultValue): string;
 
         /**
          * Sets a value, for the specified key
@@ -71,7 +71,7 @@ declare module "@dirigible/core" {
          */
         function set(name, value);
     }
-    module destinations {
+    module destination {
         /**
          * Returns an object representing the destination
          * @param name
@@ -121,7 +121,7 @@ declare module "@dirigible/core" {
     module globals {
         /**
          * Returns the value per key from the global parameters
-         * @param key
+         * @param name
          */
         function get(key: string): string;
 
@@ -173,6 +173,7 @@ declare module "@dirigible/core" {
         function notifyAll();
 
     }
+
     interface Thread {
         /**
          * Returns internal thread
