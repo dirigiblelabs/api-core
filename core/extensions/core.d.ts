@@ -5,7 +5,7 @@ declare module "@dirigible/core" {
          * @param key
          * @param defaultValue
          */
-        function get(key, defaultValue): string;
+        function get(key, defaultValue?): string;
 
         /**
          * Sets a value, for the specified key
